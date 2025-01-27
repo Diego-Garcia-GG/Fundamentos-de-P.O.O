@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args) {
-        JOptionPane.showMessageDialog(null,"1ER PROGRAMA...");
+      /*  JOptionPane.showMessageDialog(null,"1ER PROGRAMA...");
 
         int horas = 0;
         float C_horas = 0;
@@ -53,5 +53,17 @@ public class Main {
         }
 
         JOptionPane.showMessageDialog(null,"La suma del número 1, hasta el entero digitado es: "+suma); //3er programa
+
+
+       */
+
+        JOptionPane.showMessageDialog(null,"4TO PROGRAMA...");
+        String nom1 = JOptionPane.showInputDialog("Introduzca sus nombres...");
+        String AP1 = JOptionPane.showInputDialog("Introduzca su apellido paterno...");
+        String AM1 = JOptionPane.showInputDialog("Introduzca su apellido materno...");
+
+        String nombre1 = (nom1 + " " + AP1 + " " + AM1);
+
+        JOptionPane.showMessageDialog(null, nombre1.toUpperCase()+" tiene: "+nombre1.length()+" letras");
     }
 }
