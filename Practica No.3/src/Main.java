@@ -66,7 +66,7 @@ public class Main {
 
         JOptionPane.showMessageDialog(null, nombre1.toUpperCase()+" tiene: "+nombre1.length()+" letras"); //4to programa
 
-       */
+
 
 
         JOptionPane.showMessageDialog(null,"5TO PROGRAMA...");
@@ -78,5 +78,17 @@ public class Main {
         total = total/1000;
 
         JOptionPane.showMessageDialog(null, "El total de gramaje/Peso es: "+total+" Kg"); //5to programa
+
+
+
+       */
+        JOptionPane.showMessageDialog(null, "6TO PROGRAMA...");
+        String Frase = JOptionPane.showInputDialog("Introduzca cualquier frase...");
+        String FraseI = "";
+        for(int i=Frase.length()-1;i>=0;i--){
+            FraseI = FraseI + Frase.charAt(i);
+        }
+
+        JOptionPane.showMessageDialog(null,"La cadena invertida de "+Frase+ " es: "+FraseI);
     }
 }
