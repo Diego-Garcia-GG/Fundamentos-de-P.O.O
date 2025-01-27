@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 
 public class Main {
     public static void main(String[] args) {
-      /*  JOptionPane.showMessageDialog(null,"1ER PROGRAMA...");
+        JOptionPane.showMessageDialog(null,"1ER PROGRAMA...");
 
         int horas = 0;
         float C_horas = 0;
@@ -37,7 +37,7 @@ public class Main {
         JOptionPane.showMessageDialog(null,nombre.toLowerCase());
         JOptionPane.showMessageDialog(null,nombre.toUpperCase());
 
-        JOptionPane.showMessageDialog(null,nombre.substring(0,1).toUpperCase()+nombre.substring(6,7).toUpperCase()+nombre.substring(14,15).toUpperCase()+nombre.substring(21,22).toUpperCase());
+        JOptionPane.showMessageDialog(null,nombre.substring(0,1).toUpperCase()+AP.substring(0,1).toUpperCase()+AM.substring(0,1).toUpperCase());
         //Diego Antonio García García
         //01234 5 6789101112 13 141516171819 20 21 //2ndo programa
 
@@ -81,7 +81,8 @@ public class Main {
 
 
 
-       */
+
+
         JOptionPane.showMessageDialog(null, "6TO PROGRAMA...");
         String Frase = JOptionPane.showInputDialog("Introduzca cualquier frase...");
         String FraseI = "";
@@ -89,6 +90,6 @@ public class Main {
             FraseI = FraseI + Frase.charAt(i);
         }
 
-        JOptionPane.showMessageDialog(null,"La cadena invertida de "+Frase+ " es: "+FraseI);
+        JOptionPane.showMessageDialog(null,"La cadena invertida de "+Frase+ " es: "+FraseI); //6to programa
     }
 }
