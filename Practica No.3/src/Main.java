@@ -55,7 +55,7 @@ public class Main {
         JOptionPane.showMessageDialog(null,"La suma del número 1, hasta el entero digitado es: "+suma); //3er programa
 
 
-       */
+
 
         JOptionPane.showMessageDialog(null,"4TO PROGRAMA...");
         String nom1 = JOptionPane.showInputDialog("Introduzca sus nombres...");
@@ -64,6 +64,19 @@ public class Main {
 
         String nombre1 = (nom1 + " " + AP1 + " " + AM1);
 
-        JOptionPane.showMessageDialog(null, nombre1.toUpperCase()+" tiene: "+nombre1.length()+" letras");
+        JOptionPane.showMessageDialog(null, nombre1.toUpperCase()+" tiene: "+nombre1.length()+" letras"); //4to programa
+
+       */
+
+
+        JOptionPane.showMessageDialog(null,"5TO PROGRAMA...");
+
+        int Munecas = Integer.parseInt(JOptionPane.showInputDialog(null,"Cantidad de muñecas del último paquete..."));
+        int Payasos = Integer.parseInt(JOptionPane.showInputDialog(null,"Cantidad de payasos del último paquete..."));
+
+        float total = (Munecas * 75) + (Payasos * 112);
+        total = total/1000;
+
+        JOptionPane.showMessageDialog(null, "El total de gramaje/Peso es: "+total+" Kg"); //5to programa
     }
 }
