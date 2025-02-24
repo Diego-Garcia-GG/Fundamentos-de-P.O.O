@@ -1,10 +1,19 @@
+import java.sql.SQLOutput;
+
 public class Spartan {
 
     //Atributos
-    public String nombre;
-    public int salud;
-    public int escudo;
-    public String ArmaPrincipal;
+    private String nombre;
+    private int salud;
+    private int escudo;
+    private String ArmaPrincipal;
+
+    public Spartan(String nombre, int salud, int escudo, String armaPrincipal) {
+        this.nombre = nombre;
+        this.salud = salud;
+        this.escudo = escudo;
+        this.ArmaPrincipal = armaPrincipal;
+    }
 
     //Métodos
     public void MostrarInfo(){
@@ -36,5 +45,42 @@ public class Spartan {
             System.out.println("El spartan "+nombre+" se detuvo");
             System.out.println("---------------------------------");
         }
+    }
+
+    private void ConsultarCortana(){
+        System.out.println("Converacion Privada...");
+    }
+
+    //Getters & Setters
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getSalud() {
+        return salud;
+    }
+
+    public void setSalud(int salud) {
+        this.salud = salud;
+    }
+
+    public int getEscudo() {
+        return escudo;
+    }
+
+    public void setEscudo(int escudo) {
+        this.escudo = escudo;
+    }
+
+    public String getArmaPrincipal() {
+        return ArmaPrincipal;
+    }
+
+    public void setArmaPrincipal(String armaPrincipal) {
+        ArmaPrincipal = armaPrincipal;
     }
 }
