@@ -2,7 +2,7 @@ import javax.swing.*;
 
 public class AplicacionContrasena {
     public static void main(String[] args) {
-        int longitud = 8; // Valor por defecto
+        int longitud = 8;
         try {
             longitud = Integer.parseInt(JOptionPane.showInputDialog("Ingrese la longitud de la contraseña (8 por defecto):"));
         } catch (NumberFormatException e) {
