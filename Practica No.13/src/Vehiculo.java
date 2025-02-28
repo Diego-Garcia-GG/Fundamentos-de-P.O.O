@@ -1,11 +1,9 @@
-import java.util.*;
 import javax.swing.JOptionPane;
 
 public class Vehiculo {
     private String placa = "";
     private String modelo = "";
     private int capacidadcarga = 0;
-
     private Conductor conductor;
 
     public Vehiculo(String PLACA, String MODELO, int CAPACIDADCARGA){
@@ -15,7 +13,16 @@ public class Vehiculo {
     }
 
     public void asignarConductor(Conductor CONDUCTOR){
+        if(this.conductor != null){
+            JOptionPane.showMessageDialog(null, "Ya se ha asignado un conductor a este vehículo.");
+        } else {
+            this.conductor = CONDUCTOR;
+            JOptionPane.showMessageDialog(null, "Conductor asignado correctamente.");
+        }
+    }
 
+    public Conductor getConductor() {
+        return this.conductor;
     }
 
     public String getPlaca() {
