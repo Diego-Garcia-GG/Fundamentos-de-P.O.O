@@ -56,6 +56,25 @@ public class UserCRUD {
             return null;
         }
     }
+    
+    
+    //----------------------------------------------------------------------------------------------------------------------------------
+    
+    public boolean ActualizarPorID(String nombre, String correo, String contrasena, int id){ //UPDATE dentro de MySQL Workbench
+        String updateSQL = "UPDATE Usuarios SET Nombre = ?, Correo = ?, Contraseña = ? WHERE id_usuario = ?";
+        try{
+            PreparedStatement ps = conexion.prepareStatement(updateSQL); //Aginación de la sentencia y parámetros para su ejecución
+            ps.setString(1, nombre);
+            ps.setString(2, correo);
+            ps.setString(3, contrasena);
+            ps.setInt(4, id);
+            return ps.executeUpdate()>0;
+        }
+        catch(SQLException e){
+            System.out.print("Error al actualizar el usuario "+e.getMessage()); //Impresión en consola en caso de que no se ejectue el INSERT
+            return false;
+        }
+    }
 }
 
 

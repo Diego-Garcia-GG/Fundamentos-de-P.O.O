@@ -6,6 +6,7 @@ public class Conexión_MySQL {
     private static final String URL = "jdbc:mysql://localhost:3306/dbpoo?serverTimezone=UTC"; //cuida el nombre de la BD
     private static final String USUARIO = "root"; // Cambia esto si tienes otro usuario
     private static final String CONTRASENA = "bd2025+"; // Pon tu contraseña aquí en workbeach
+    
 
     public static Connection conectar() {
         
